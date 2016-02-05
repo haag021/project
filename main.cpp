@@ -9,8 +9,21 @@ int main()
 	Person shane("Shane", false);
 	Person erik("Erik", true);
 
-	shane.introduce();
-	erik.introduce();
+	// only erik is lame
+	Person austin("Austin", false);
+	Person tim("Tim", false);
+
+	// store people into an array
+	Person people[4] = {
+		shane, erik, austin, tim
+	};
+
+	// loop through each person
+	// and introduce them
+	for(int i = 0; i < 4; i++)
+	{
+		people[i].introduce();
+	}
 
 	// windows console support
 	system("pause");
